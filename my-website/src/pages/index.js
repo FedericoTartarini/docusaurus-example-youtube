@@ -8,8 +8,13 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>My website</>,
+    imageUrl: 'img/undraw_figure.svg',
+      secondParagraph: (
+          <>
+              First
+          </>
+      ),
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -20,6 +25,11 @@ const features = [
   {
     title: <>Focus on What Matters</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
+      secondParagraph: (
+          <>
+              Second
+          </>
+      ),
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -30,16 +40,21 @@ const features = [
   {
     title: <>Powered by React</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
+      secondParagraph: (
+          <>
+              Third
+          </>
+      ),
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
+        Very nice your website layout by reusing React. Docusaurus can
         be extended while reusing the same header and footer.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, secondParagraph}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -50,6 +65,7 @@ function Feature({imageUrl, title, description}) {
       )}
       <h3>{title}</h3>
       <p>{description}</p>
+      <p>{secondParagraph}</p>
     </div>
   );
 }
@@ -72,7 +88,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Contact us
             </Link>
           </div>
         </div>
