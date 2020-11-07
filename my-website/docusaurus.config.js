@@ -1,11 +1,11 @@
 module.exports = {
   title: 'Edy',
   tagline: 'Documentation website',
-  url: 'https://docusaurus-example-youtube.netlify.app',
-  baseUrl: '/',
+  url: 'https://FedericoTartarini.github.io',
+  baseUrl: '/docusaurus-example-youtube/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'edy', // Usually your GitHub org/user name.
+  organizationName: 'FedericoTartarini', // Usually your GitHub org/user name.
   projectName: 'docusaurus-example-youtube', // Usually your repo name.
   themeConfig: {
     navbar: {
