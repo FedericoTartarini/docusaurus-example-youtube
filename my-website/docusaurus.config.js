@@ -29,6 +29,16 @@ module.exports = {
         },
       ],
     },
+    algolia: {
+      apiKey: 'e44c59d36394a26b1616e631a1c9d197',
+      indexName: 'edy',
+      appId: 'HXJSB0I3EO',
+
+      // Optional: see doc section bellow
+      // contextualSearch: true,
+
+      //... other Algolia params
+    },
     footer: {
       style: 'dark',
       links: [
